@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Joshua Demkiw">
+    <meta name="keywords" content="Software, Electrical, Engineer, Developer, Python, Computer, Programming">
+    <meta name="author" content="Josh Demkiw">
+    <title>Josh Demkiw | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <section id="showcase">
+      <div class="container">
+        <h1>Joshua Demkiw</h1>
+        <h3>Software Developer</h3>
+        <h3>Electrical Engineering | University of Waterloo<h3>
+      </div>
+      <div id="boxes">
+        <a href="https://ca.linkedin.com/in/joshua-demkiw-3a29b297"><img id="linkedin" src="img/linkedin.png" alt="LinkedIn" onmouseover="hover(this);" onmouseout="unhover(this)";></a>
+        <span><a href="https://github.com/joshDemkiw/"><img id="github" src="img/github.png" alt="Github" onmouseover="hover(this);" onmouseout="unhover(this)";></a></span>
+        <span><a href="./img/JoshResume2018.docx"><img id="resume" src="img/resume-icon.png" alt="Resume" onmouseover="hover(this);" onmouseout="unhover(this)";></a></span>
+        <span><a href="mailto:joshua.demkiw@gmail.com"><img id="email" src="img/e-mail.png" alt="E-mail" onmouseover="hover(this);" onmouseout="unhover(this)";></a></span>
+      </div>
+    </section>
+
+    <footer>
+      <p>Joshua Demkiw, Copyright &copy; 2018</p>
+    </footer>
+
+    <script language="javascript">
+      imgsrc = "";
+      function hover(element) {
+        imgsrc = element.getAttribute('src');
+        parts = imgsrc.split(".");
+        newsrc = parts[0]+"Highlight."+parts[1];
+        element.setAttribute('src', newsrc);
+      }
+      function unhover(element) {
+        element.setAttribute('src', imgsrc);
+      }
+    </script>
+  </body>
+</html>
